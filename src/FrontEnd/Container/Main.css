@@ -1,0 +1,43 @@
+.Footer{
+    background: white;
+    padding: 4px 8px;
+    min-width: 10vh;
+}
+.Sider{
+    background: #ccedfc;
+}
+.MainPage .Dropdown{
+    margin-left: 1cm;
+}
+.User{
+    align-self: right;
+}
+.MainPage .Content{
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+.CSILOGO{
+    width: auto;
+    height: 1.5cm;
+    margin: 0%;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+}
+ul{
+    margin: 0% auto;
+    font-size: 18px;
+    padding: 0px;
+}
+
+.SiderItem{
+    margin-top: 1.5cm;
+}
+
+.Header{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.Header .Avater{
+    position: absolute;
+    right: 2cm;
+}
