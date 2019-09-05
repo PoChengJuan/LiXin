@@ -26,15 +26,10 @@
 .App-link {
   color: #61dafb;
 }
-.Header{
-  background: #ccedfc;
-  flex-direction: row;
-  padding-right: 5%;
-  padding-left: 5%;
-}
+
 .Content{
   margin: 0%;
-  background: #e4f7ff;
+  background: white;
   min-height: 100vh;
 }
 @keyframes App-logo-spin {

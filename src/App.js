@@ -276,8 +276,8 @@ function App() {
   return (
     <Router>
       <div>
-        <Route path='/' exact component={Login} />
-        <Route path='/Main' component={Main} />
+        <Route path='/Login' exact component={Login} />
+        <Route path='/' component={Main} />
         <Route path='/User' component={User} />
         <Route path='/Scrap' component={Scrap} />
       </div>

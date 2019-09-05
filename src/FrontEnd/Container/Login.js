@@ -59,20 +59,6 @@ class Login extends React.Component{
           this.setState({Permission:response.data[0][index]});
           window.sessionStorage.setItem('permission',response.data[0][index]);
         }
-        if(index==='shopname'){
-          this.setState({ShopName:response.data[0][index]});
-          window.localStorage.setItem('shopname',response.data[0][index]);
-
-        }
-        if(index==='branch'){
-          this.setState({Branch:response.data[0][index]});
-          window.localStorage.setItem('branch',response.data[0][index]);
-        }
-        if(index==='lastupload'){
-          //this.setState({Branch:response.data[0][index]});
-          window.sessionStorage.setItem('lastupload',response.data[0][index]);
-        }
-
       } 
       if(md5(pw) === this.state.Password){
         window.sessionStorage.setItem('isAuth','true');  
