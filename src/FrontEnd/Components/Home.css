@@ -5,7 +5,8 @@
     margin-top: 0%;
     width: 100%;
 }
-.HomeContent h1{
-    text-align: center;
+.HomeContent{
+    width: 60%;
     margin:0% auto;
+    min-height: 85vh;
 }

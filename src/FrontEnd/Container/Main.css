@@ -28,24 +28,25 @@
     align-self: right;
 }
 .MainPage .Content{
-    padding-left: 1cm;
-    padding-right: 1cm;
     margin-right: 0%;
     margin-left: 0%;
 }
 .CSILOGO{
-    width: auto;
-    height: 1.5cm;
-    margin: 0%;
-    margin-left: 1.5cm;
-    margin-right: 2cm;
+   
 }
 
 .SiderItem{
     margin-top: 1.5cm;
 }
-.MainPage img{
-    margin-top: 6px;
+.MainPage .logo{
+    width: 10%;
+    min-width: 2cm;
+}
+.logo img{
+    margin:0% auto;
+    width: 100%;
+    
+    height: auto;
 }
 .ant-menu-horizontal{
     

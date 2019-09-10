@@ -33,17 +33,16 @@ class Product extends React.Component{
     return(
       <div className='ProductList'>
         <span style={{fontSize:"18px",color:'#C8A065'}}>產品</span>
-        <Row gutter={8}>
-          <Col span={8}>
+        <Row gutter={16}>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
              hoverable
-             style={{ width: 360 }}
              cover={<img alt="example" src={pic1} onClick={()=>this.SetProduct_1visible(true)} />}
              
             >
-              <Meta title="アイスクリスタル膠原蛋白" description="日本魚膠原蛋白、台灣虱目魚鱗膠原蛋白(含三胜肽)、以色列黃金番
-                茄粉末、流行鏈球菌發酵物(含透明質酸鈉)、金頂側耳萃取物(含神經醯胺)
-              " />
+              <Meta title="アイスクリスタル膠原蛋白" 
+                //description="日本魚膠原蛋白、台灣虱目魚鱗膠原蛋白(含三胜肽)、以色列黃金番茄粉末、流行鏈球菌發酵物(含透明質酸鈉)、金頂側耳萃取物(含神經醯胺)"
+                 />
               <Modal
                 footer={null}
                 keyboard = {true}
@@ -57,14 +56,15 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable
-              style={{ width: 360 }}
               cover={<img alt="example" src={pic2} onClick={()=>this.SetProduct_2visible(true)} />}
               
             >
-              <Meta title="甄嬛美人魚" description="玉米可溶性纖維(異麥牙糊精).複合柑橘及瓜拿納萃取物(葡萄柚萃取物.麥芽糊精.瓜拿納萃取物.甜橙萃取物. 血橙萃取物).馬鈴薯萃取物.阿拉伯糖.穀蔬果發酵萃取物20-Plus(乳糖.穀類萃取物(米).鳳梨萃取物.青木瓜萃取物 酵素製劑(含乳糖分解酵素.纖維分解酵素.澱粉酵素.蛋白酵素.糖甘酵素.麥芽糊精).芽孢乳酸菌(乳酸菌Bacillus coagulans).PVP-K30.二氧化矽.硬脂酸鎂" />
+              <Meta title="甄嬛美人魚" 
+              //description="玉米可溶性纖維(異麥牙糊精).複合柑橘及瓜拿納萃取物(葡萄柚萃取物.麥芽糊精.瓜拿納萃取物.甜橙萃取物. 血橙萃取物).馬鈴薯萃取物.阿拉伯糖.穀蔬果發酵萃取物20-Plus(乳糖.穀類萃取物(米).鳳梨萃取物.青木瓜萃取物 酵素製劑(含乳糖分解酵素.纖維分解酵素.澱粉酵素.蛋白酵素.糖甘酵素.麥芽糊精).芽孢乳酸菌(乳酸菌Bacillus coagulans).PVP-K30.二氧化矽.硬脂酸鎂" 
+              />
               <Modal
                 footer={null}
                 width='520'
@@ -75,14 +75,15 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable
-              style={{ width: 360 }}
               cover={<img alt="example" src={pic3} onClick={()=>this.SetProduct_3visible(true)}/>}
               
             >
-              <Meta title="核彈咖啡" description="專利難消化性麥芽糊精、奶油粉、椰子油粉、即溶咖啡粉、中鏈三酸" />
+              <Meta title="核彈咖啡" 
+              //description="專利難消化性麥芽糊精、奶油粉、椰子油粉、即溶咖啡粉、中鏈三酸" 
+              />
               <Modal
                 footer={null}
                 width='520'
@@ -95,17 +96,16 @@ class Product extends React.Component{
           </Col>
         </Row>
         <br/>
-        <Row>
-          <Col span={8}>
+        <Row gutter={16}>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable
-              style={{ width: 360 }}
               cover={<img alt="example" src={pic4} onClick={()=>this.SetProduct_4visible(true)}/>}
               
             >
-              <Meta title="專利活益菌" description="日植物乳酸桿菌LP110、植物乳酸桿菌LP109、乳酸片菌PA320、初乳蛋白萃取、水溶性膳食纖維、乳酸粉、木寡糖、海藻糖、異麥芽寡糖
-                產品特性：含有高活性乳酸菌及功能成分，調整體質及生理機能。且菌種採用專利多層凍晶包覆技術，可維持菌株高度存活率
-              " />
+              <Meta title="專利活益菌" 
+              //description="日植物乳酸桿菌LP110、植物乳酸桿菌LP109、乳酸片菌PA320、初乳蛋白萃取、水溶性膳食纖維、乳酸粉、木寡糖、海藻糖、異麥芽寡糖產品特性：含有高活性乳酸菌及功能成分，調整體質及生理機能。且菌種採用專利多層凍晶包覆技術，可維持菌株高度存活率" 
+              />
               <Modal
                 footer={null}
                 width='520'
@@ -116,14 +116,15 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable
-              style={{ width: 360 }}
               cover={<img alt="example" src={pic5} onClick={()=>this.SetProduct_5visible(true)}/>}
               
             >
-              <Meta title="綠蜂膠黃金胜肽皂" description="Propolis、Honey、Fruit Enzymes (Fruit Extract)、Golden Peptide、Amino Acids、Ginger Extract、Curcuma Aromatica Extract、Essential Oil、Propylene Glycol、Glycerin、E.D.T.A.- 4Na、Sorbitol、Sodium Hydroxide、Extra Virgin Olive Oil、Coconut Oil Fatty Acid、Titanium Dioxide、Essential Oil 、Aqua(D.I. Water)" />
+              <Meta title="綠蜂膠黃金胜肽皂" 
+              //description="Propolis、Honey、Fruit Enzymes (Fruit Extract)、Golden Peptide、Amino Acids、Ginger Extract、Curcuma Aromatica Extract、Essential Oil、Propylene Glycol、Glycerin、E.D.T.A.- 4Na、Sorbitol、Sodium Hydroxide、Extra Virgin Olive Oil、Coconut Oil Fatty Acid、Titanium Dioxide、Essential Oil 、Aqua(D.I. Water)" 
+              />
               <Modal
                 footer={null}
                 width='520'
@@ -134,14 +135,15 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable
-              style={{ width: 360 }}
               cover={<img alt="example" src={pic6} onClick={()=>this.SetProduct_6visible(true)}/>}
               
             >
-              <Meta title="純南極磷蝦油 軟膠囊" description="磷蝦油100% 膠皮成分:明膠.甘油.水" />
+              <Meta title="純南極磷蝦油 軟膠囊" 
+              //description="磷蝦油100% 膠皮成分:明膠.甘油.水" 
+              />
               <Modal
                 footer={null}
                 width='520'

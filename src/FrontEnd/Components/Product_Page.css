@@ -1,5 +1,5 @@
 .ProductPage{
-  display:flex; 
+  
    
   
 }
@@ -12,6 +12,6 @@
 img{
   margin: 0cm;
   margin-right: 2cm;
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  height: auto;
 }

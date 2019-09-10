@@ -3,7 +3,7 @@ import { Menu, Icon, Layout,Affix } from 'antd';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import '../../App.css'
 import './Main.css'
-import CSILogo from '../pic/LiXin.png' 
+import Logo from '../pic/LiXin.png' 
 import ShoppingCar from '../Components/ShoppingCar.js';
 import Home from '../Components/Home.js'
 import Product from '../Components/Product.js'
@@ -92,7 +92,10 @@ class MainPage extends React.Component{
         <Router>
           <Affix offsetTop={this.state.top}>
             <Header className="Header">
-            <img className="CSILOGO" src={CSILogo} alt="CSILOGO" />
+            <div className='logo'>
+              <img className="" src={Logo} alt="LOGO" />
+            </div>
+            
 
               <Menu onClick={this.handleClick} defaultSelectedKeys={['1']} selectedKeys={[this.state.current]} mode="horizontal">
                 <Menu.Item key="1">
