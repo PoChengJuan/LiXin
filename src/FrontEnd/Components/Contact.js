@@ -1,25 +1,17 @@
 import React from 'react';
 import './Contact.css'
 import { Typography,Icon } from 'antd';
-import axios from 'axios'
-import baseURL from './AxiosAPI'
-import moment from 'moment';
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 class Achieving extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      data:[],
-      month:moment().format('YYY-MM'),
-      chartWidth:this.props.Width,
-      chartHeight:500,
-      
+
     }      
     this.saveRef = ref => {this.refDom = ref};
     this.updateDimensions = this.updateDimensions.bind(this)
   }
   render(){
-    const{chartWidth,data}=this.state
     return(
       <div className='Contact' ref={this.saveRef}>
         <Title>聯絡我們</Title>
@@ -55,34 +47,8 @@ class Achieving extends React.Component{
       chartWidth:clientWidth
     });
   }
-  /***********************MonthPickerFunction********************************************/
-  MonthPickerFunction(dates, dateStrings) {
-    var lastmonth;
-    window.localStorage.setItem("AchievingPageDate_Month",dateStrings)
-    lastmonth = moment(dateStrings).add('month',-1).format('YYYY-MM');
-    this.DataUpdate(lastmonth,dateStrings);
-  }
-  /***********************DataUpdate****************************************************/
-  DataUpdate = (lastmonth,month) => {
-    axios.get(baseURL+'/ShopData/getAchieving',
-    {
-      params: {
-        shopname : window.localStorage.getItem('shopname'),
-        branch :  window.localStorage.getItem('branch'),
-        month: month,
-        lastmonth:lastmonth
-      }
-    })
-    .then( (response) =>{
-      this.setState({data:response.data})  
-      console.log(this.state.data)
-    })
-    .catch(function (error) {
-      console.log(error);
-    }); 
-    this.setState({
-      month:month})
-  }
+  
+  
 }
 
 export default Achieving

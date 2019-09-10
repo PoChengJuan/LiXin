@@ -1,19 +1,15 @@
 import React from 'react';
-import { Menu, Dropdown, Icon, Layout,Affix } from 'antd';
+import { Menu, Icon, Layout,Affix } from 'antd';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import '../../App.css'
 import './Main.css'
-import CSILogo from '../png/Logo.png' 
+import CSILogo from '../pic/LiXin.png' 
 import ShoppingCar from '../Components/ShoppingCar.js';
-import Info from '../Components/Info.js';
-import InfoIcom from'../Components/InfoIcon.js'
-import axios from 'axios'
-import baseURL from '../Components/AxiosAPI'
+import Home from '../Components/Home.js'
 import Product from '../Components/Product.js'
 import Contact from '../Components/Contact.js'
-import Statistics from '../Components/Statistics.js'
 const {
-  Header, Footer, Sider, Content,
+  Header, Footer, Content,
 } = Layout;
 
 
@@ -58,27 +54,28 @@ class MainPage extends React.Component{
   render(){
     const routes = [
       {
-        path: "/Main",
+        path: "/",
         exact: true,
-        main: () => <Info Branch={this.state.Branch} Width={1500} />
+        //main: () => <Info Branch={this.state.Branch} Width={1500} />
+        main: () => <Home />
       },
       {
         path: '/Product',
         exact: true,
-        main: () => <Product Branch={this.state.Branch} Width={this.refDom.clientWidth} />
+        main: () => <Product />
       },
       {
         path: "/ShoppingCar",
         exact: true,
-        main: () => <ShoppingCar Branch={this.state.Branch} Width={this.refDom.clientWidth} />
+        main: () => <ShoppingCar/>
       },
       {
         path: "/Contact",
         exact: true,
-        main: () => <Contact Branch={this.state.Branch} Width={this.refDom.clientWidth} />
+        main: () => <Contact/>
       }
     ];
-    const { StockPage,ScrapPage,BranchList } = this.state;
+    const { StockPage,ScrapPage } = this.state;
     if(window.sessionStorage.getItem('isAuth') === 'false'){
       return <Redirect to={'/'} />
     }
@@ -97,11 +94,11 @@ class MainPage extends React.Component{
             <Header className="Header">
             <img className="CSILOGO" src={CSILogo} alt="CSILOGO" />
 
-              <Menu onClick={this.handleClick} defaultSelectedKeys={['1']} selectedKeys={[this.state.current]} mode="horizontal" defaultSelectedKeys={['1']}>
+              <Menu onClick={this.handleClick} defaultSelectedKeys={['1']} selectedKeys={[this.state.current]} mode="horizontal">
                 <Menu.Item key="1">
                   <Icon type="home" />
                   <span className="nav-text">首頁</span>
-                  <Link to='/Main'></Link>
+                  <Link to='/'></Link>
                 </Menu.Item>
                 <Menu.Item key="2" >
                   <Icon type="appstore" />
@@ -159,26 +156,7 @@ class MainPage extends React.Component{
     //console.log(this.state.Branch)
     //this.setState({isAuth:window.sessionStorage.getItem('isAuth')});
     //console.log(window.sessionStorage.getItem('isAuth'))
-    axios.get(baseURL+'/ShopInfo/getBranch',
-      {
-        params: {
-        shopname : window.localStorage.getItem('shopname')
-      }
-      })
-    .then( (response) =>{  
-      this.setState({
-        BranchList:response.data,
-        //Branch:response.data[0].branch
-      })   
-      //console.log(response.data)   
-      //for(var index in response.data) {
-       // this.setState({Shop:response.data[index]})
-       // console.log(response.data[index])
-      //}
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    
 
     if(window.sessionStorage.getItem('permission') === '9'){
       this.setState({Position:'開發者',

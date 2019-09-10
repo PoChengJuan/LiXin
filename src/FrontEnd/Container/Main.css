@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 0%;
 }
 
 .Header .Avater{
@@ -40,13 +40,19 @@
     margin-left: 1.5cm;
     margin-right: 2cm;
 }
-ul{
-    margin: 0% auto;
-    font-size: 18px;
-    padding: 0px;
-}
 
 .SiderItem{
     margin-top: 1.5cm;
 }
+.MainPage img{
+    margin-top: 6px;
+}
+.ant-menu-horizontal{
+    
+    border-bottom:0px;
+    line-height:62px;
+    background-color: #ffffff;
+background-image: linear-gradient(28deg, #ffffff 38%, #c8a065 100%);
 
+
+}

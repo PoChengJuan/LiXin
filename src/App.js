@@ -265,10 +265,7 @@ function App() {
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Login from './FrontEnd/Container/Login'
 import Main from './FrontEnd/Container/Main'
-import User from './FrontEnd/Container/User'
-import Scrap from './FrontEnd/Container/Scrap'
 //import Test from './FrontEnd/Container/test'
 
 
@@ -276,10 +273,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Route path='/Login' exact component={Login} />
         <Route path='/' component={Main} />
-        <Route path='/User' component={User} />
-        <Route path='/Scrap' component={Scrap} />
       </div>
     </Router>
   );

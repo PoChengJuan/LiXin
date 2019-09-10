@@ -1,0 +1,17 @@
+.ProductPage{
+  display:flex; 
+   
+  
+}
+.ant-modal-body{
+  background: linear-gradient(147deg, #FFFFFF 69%, #C8A065 100%); 
+  background: -moz-linear-gradient(147deg, #FFFFFF 69%, #C8A065 100%); 
+  background: -webkit-linear-gradient(147deg, #FFFFFF 69%, #C8A065 100%); 
+  background: -o-linear-gradient(147deg, #FFFFFF 69%, #C8A065 100%); 
+}
+img{
+  margin: 0cm;
+  margin-right: 2cm;
+  width: 30%;
+  height: 30%;
+}
