@@ -5,7 +5,7 @@ import './Home.css'
 
 import MainPic from '../pic/MainPic.png' 
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 class Home extends React.Component{
     render(){
