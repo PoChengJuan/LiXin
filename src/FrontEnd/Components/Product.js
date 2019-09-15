@@ -9,12 +9,12 @@ import Product6 from './Product6.js'
 //import Home1 from '../Components/Home1.js'
 import './Product.css'
 
-import pic1 from '../pic/1.png' 
-import pic2 from '../pic/2.png' 
-import pic3 from '../pic/3.png' 
-import pic4 from '../pic/4.png' 
-import pic5 from '../pic/5.png' 
-import pic6 from '../pic/6.png' 
+import pic1 from '../pic/Pic1.png' 
+import pic2 from '../pic/Pic2.png' 
+import pic3 from '../pic/Pic3.png' 
+import pic4 from '../pic/Pic4.png' 
+import pic5 from '../pic/Pic5.png' 
+import pic6 from '../pic/Pic6.png' 
 const { Meta } = Card;
 
 class Product extends React.Component{
@@ -94,9 +94,6 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
-        </Row>
-        <br/>
-        <Row gutter={16}>
           <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable

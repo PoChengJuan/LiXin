@@ -2,9 +2,11 @@
   margin: auto;
 }
 .ProductList img{
-  width: 0% auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .ProductList .ant-card{
   max-width: 360px;
-  margin:0% auto;
+  margin:0% auto; 
+  
 }
