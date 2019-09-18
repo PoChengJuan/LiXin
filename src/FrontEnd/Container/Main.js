@@ -97,7 +97,7 @@ class MainPage extends React.Component{
             </div>
             
 
-              <Menu onClick={this.handleClick} defaultSelectedKeys={['1']} selectedKeys={[this.state.current]} mode="horizontal">
+              <Menu onClick={this.handleClick} theme='light' defaultSelectedKeys={['1']} selectedKeys={[this.state.current]} mode="horizontal">
                 <Menu.Item key="1">
                   <Icon type="home" />
                   <span className="nav-text">首頁</span>

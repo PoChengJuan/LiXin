@@ -9,7 +9,15 @@
 
 .ant-menu{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
+.ant-menu-item{
+    
+    
+}
+
 .Footer{
     background: white;
     padding: 4px 8px;
