@@ -16,7 +16,7 @@ class Product1 extends React.Component{
           </Col>
           <Col xs={{ span: 24}} md={{ span: 12}}>
             <div className='Product_1Content'>
-              <Title>品    名：アイスクリスタル膠原蛋白</Title>
+              <Title>アイスクリスタル膠原蛋白</Title>
               <Divider />
               <Paragraph>
                 成    份：日本魚膠原蛋白、台灣虱目魚鱗膠原蛋白(含三胜肽)、以色列黃金番

@@ -6,6 +6,7 @@ import Product3 from './Product3.js'
 import Product4 from './Product4.js'
 import Product5 from './Product5.js'
 import Product6 from './Product6.js'
+import Product7 from './Product7.js'
 //import Home1 from '../Components/Home1.js'
 import './Product.css'
 
@@ -15,6 +16,8 @@ import pic3 from '../pic/Pic3.png'
 import pic4 from '../pic/Pic4.png' 
 import pic5 from '../pic/Pic5.png' 
 import pic6 from '../pic/Pic6.png' 
+import pic7 from '../pic/7-01.png' 
+
 const { Meta } = Card;
 
 class Product extends React.Component{
@@ -27,6 +30,7 @@ class Product extends React.Component{
       Product4Visible:false,
       Product5Visible:false,
       Product6Visible:false,
+      Product7Visible:false,
     }
   }
   render(){
@@ -151,6 +155,25 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
+            <Card
+              hoverable
+              cover={<img alt="example" src={pic7} onClick={()=>this.SetProduct_7visible(true)}/>}
+              
+            >
+              <Meta title="肌さらさら晚安膠囊" 
+              //description="磷蝦油100% 膠皮成分:明膠.甘油.水" 
+              />
+              <Modal
+                footer={null}
+                width='520'
+                visible={this.state.Product7Visible}
+                onCancel={() => this.SetProduct_7visible(false)}
+              >
+                <Product7 />
+              </Modal>
+            </Card>
+          </Col>
         </Row>
       </div>
     )
@@ -172,6 +195,9 @@ class Product extends React.Component{
   }
   SetProduct_6visible = (status) =>{
     this.setState({Product6Visible:status});
+  }
+  SetProduct_7visible = (status) =>{
+    this.setState({Product7Visible:status});
   }
   
 }
