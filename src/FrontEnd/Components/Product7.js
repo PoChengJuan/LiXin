@@ -1,20 +1,42 @@
 import React from 'react';
 import { Typography, Divider,Row,Col } from 'antd';
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import './Product_Page.css'
 
-import Pic_1 from '../pic/7-01.png' 
-import Pic_2 from '../pic/7-02.png' 
+import Pic_1 from '../pic/7-1.jpg' 
+import Pic_2 from '../pic/7-2.jpg' 
 
 const { Title,Paragraph } = Typography;
 
 class Product1 extends React.Component{
   render(){
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+      };
     return(
       <div className='ProductPage'>
         <Row>
           <Col xs={{ span: 24}} md={{ span: 12}}>
-            <img alt="example" src={Pic_1} />
+            <Slider {...settings}>
+            <div>
+<img alt="example" src={Pic_1} />
+            </div>
+            <div>
+              <img alt="example" src={Pic_2} />
+
+            </div>
+                
+              
+            </Slider>
+            
           </Col>
           <Col xs={{ span: 24}} md={{ span: 12}}>
             <div className='Product_1Content'>

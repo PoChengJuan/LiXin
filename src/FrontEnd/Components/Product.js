@@ -16,7 +16,7 @@ import pic3 from '../pic/Pic3.png'
 import pic4 from '../pic/Pic4.png' 
 import pic5 from '../pic/Pic5.png' 
 import pic6 from '../pic/Pic6.png' 
-import pic7 from '../pic/7-01.png' 
+import pic7 from '../pic/Pic7.png' 
 
 const { Meta } = Card;
 
