@@ -12,7 +12,9 @@ class Product1 extends React.Component{
       <div className='ProductPage'>
         <Row>
           <Col xs={{ span: 24}} md={{ span: 12}}>
+            <div className='product_div'>
             <img alt="example" src={Pic} />
+            </div>
           </Col>
           <Col xs={{ span: 24}} md={{ span: 12}}>
             <div className='Product_1Content'>

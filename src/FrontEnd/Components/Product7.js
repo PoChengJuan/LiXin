@@ -25,18 +25,16 @@ class Product1 extends React.Component{
       <div className='ProductPage'>
         <Row>
           <Col xs={{ span: 24}} md={{ span: 12}}>
-            <Slider {...settings}>
-            <div>
-<img alt="example" src={Pic_1} />
+            <div className='product_div'>
+              <Slider {...settings}>
+              <div>
+                  <img alt="example" src={Pic_1} />
+              </div>
+              <div>
+                <img alt="example" src={Pic_2} />
+              </div>
+              </Slider>
             </div>
-            <div>
-              <img alt="example" src={Pic_2} />
-
-            </div>
-                
-              
-            </Slider>
-            
           </Col>
           <Col xs={{ span: 24}} md={{ span: 12}}>
             <div className='Product_1Content'>

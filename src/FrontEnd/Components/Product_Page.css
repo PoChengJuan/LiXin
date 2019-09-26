@@ -9,8 +9,8 @@
   background: -webkit-linear-gradient(147deg, #FFFFFF 69%, #C8A065 100%); 
   background: -o-linear-gradient(147deg, #FFFFFF 69%, #C8A065 100%); 
 }
-.ProductPage img{
-  margin: 5%;
+.ProductPage .product_div{
+  margin: 5% auto;
   width: 70%;
   height: auto;
 }

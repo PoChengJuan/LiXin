@@ -7,6 +7,9 @@ import Product4 from './Product4.js'
 import Product5 from './Product5.js'
 import Product6 from './Product6.js'
 import Product7 from './Product7.js'
+import Product8 from './Product8.js'
+import Product9 from './Product9.js'
+
 //import Home1 from '../Components/Home1.js'
 import './Product.css'
 
@@ -31,6 +34,8 @@ class Product extends React.Component{
       Product5Visible:false,
       Product6Visible:false,
       Product7Visible:false,
+      Product8Visible:false,
+      Product9Visible:false,
     }
   }
   render(){
@@ -174,6 +179,44 @@ class Product extends React.Component{
               </Modal>
             </Card>
           </Col>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
+            <Card
+              hoverable
+              cover={<img alt="example" src={pic7} onClick={()=>this.SetProduct_8visible(true)}/>}
+              
+            >
+              <Meta title="翡玟 漾采保濕凝霜" 
+              //description="磷蝦油100% 膠皮成分:明膠.甘油.水" 
+              />
+              <Modal
+                footer={null}
+                width='520'
+                visible={this.state.Product8Visible}
+                onCancel={() => this.SetProduct_8visible(false)}
+              >
+                <Product8 />
+              </Modal>
+            </Card>
+          </Col>
+          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
+            <Card
+              hoverable
+              cover={<img alt="example" src={pic7} onClick={()=>this.SetProduct_9visible(true)}/>}
+              
+            >
+              <Meta title="活力肽" 
+              //description="磷蝦油100% 膠皮成分:明膠.甘油.水" 
+              />
+              <Modal
+                footer={null}
+                width='520'
+                visible={this.state.Product9Visible}
+                onCancel={() => this.SetProduct_9visible(false)}
+              >
+                <Product9 />
+              </Modal>
+            </Card>
+          </Col>
         </Row>
       </div>
     )
@@ -198,6 +241,12 @@ class Product extends React.Component{
   }
   SetProduct_7visible = (status) =>{
     this.setState({Product7Visible:status});
+  }
+  SetProduct_8visible = (status) =>{
+    this.setState({Product8Visible:status});
+  }
+  SetProduct_9visible = (status) =>{
+    this.setState({Product9Visible:status});
   }
   
 }
