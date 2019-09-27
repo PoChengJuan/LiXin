@@ -86,24 +86,6 @@ class Product extends React.Component{
           <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
             <Card
               hoverable
-              cover={<img alt="example" src={pic3} onClick={()=>this.SetProduct_3visible(true)}/>}
-            >
-              <Meta title="核彈咖啡" 
-              //description="專利難消化性麥芽糊精、奶油粉、椰子油粉、即溶咖啡粉、中鏈三酸" 
-              />
-              <Modal
-                footer={null}
-                width='520'
-                visible={this.state.Product3Visible}
-                onCancel={() => this.SetProduct_3visible(false)}
-              >
-                <Product3 />
-              </Modal>
-            </Card>
-          </Col>
-          <Col xs={{ span: 24}} md={{ span: 12}} xl={{ span: 8}}>
-            <Card
-              hoverable
               cover={<img alt="example" src={pic4} onClick={()=>this.SetProduct_4visible(true)}/>}
             >
               <Meta title="專利活益菌" 
